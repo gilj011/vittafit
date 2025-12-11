@@ -1,0 +1,553 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>VittaFit - Restaurante Vegano | Nutrição, Sabor e Sustentabilidade</title>
+  <meta name="description"
+    content="VittaFit é uma rede de restaurantes veganos em São Paulo. Pratos 100% plant-based, ingredientes orgânicos e ambiente acolhedor. Descubra uma alimentação saudável, saborosa e sustentável." />
+  <meta name="keywords"
+    content="restaurante vegano, comida vegana, alimentação plant-based, VittaFit, São Paulo, comida saudável, sustentável, orgânico" />
+  <meta name="author" content="VittaFit" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="container">
+      <a class="brand" href="">
+        <!-- Substitua pelo seu logo -->
+        <div class="logo-circle"></div>
+        <div class="brand-text">
+          <strong>VittaFit</strong>
+          <span>Nutrição & Sabor</span>
+        </div>
+      </a>
+      <nav class="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="#porque">Diferenciais</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato" class="btn">Contato</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Sabor, saúde e sustentabilidade em cada prato</h1>
+        <p>Descubra uma nova forma de se alimentar: pratos 100% veganos feitos com ingredientes frescos e orgânicos. Da
+          fazenda para seu prato, com todo o sabor que você merece.
+        </p>
+        <div class="hero-actions">
+          <a href="cardapio.html" class="btn btn-primary">Explorar cardápio</a>
+          <a href="#sobre" class="btn btn-outline">Nossa história</a>
+        </div>
+
+      </div>
+      <div class="hero-image">
+        <!-- Imagem gerada por IA (coloque seu arquivo/URL aqui) -->
+        <img src="img/bowl.png" alt="Bowl vegano colorido gerado por IA com grãos, folhas e legumes" />
+        <span class="img-tag">Imagem gerada por IA</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="section">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <h2>Sobre a VittaFit</h2>
+          <p>A VittaFit nasceu da paixão por alimentação saudável e sustentável. Somos uma rede de restaurantes veganos
+            comprometida em oferecer pratos que nutrem o corpo, agradam o paladar e respeitam o planeta.</p>
+          <p>Cada receita é cuidadosamente desenvolvida por nossa equipe de chefs especializados em gastronomia
+            plant-based, combinando técnicas culinárias modernas com ingredientes frescos e orgânicos de fornecedores
+            locais.</p>
+          <p>Mais do que um restaurante, somos um espaço de conexão entre pessoas que buscam uma vida mais consciente e
+            equilibrada.</p>
+        </div>
+        <div class="card soft">
+          <h3>Nossa essência</h3>
+          <ul class="list">
+            <li><strong>Plantas:</strong> base integral, sem ingredientes de origem animal.</li>
+            <li><strong>Sazonalidade:</strong> cardápio ajustado aos melhores produtos do período.</li>
+            <li><strong>Equilíbrio:</strong> macronutrientes e fibras para saciedade e energia.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cardapio" class="section section-alt">
+    <div class="container">
+      <div class="section-head centered">
+        <h2>Nosso Cardápio</h2>
+        <p>Pratos artesanais 100% veganos, preparados com ingredientes frescos e orgânicos</p>
+      </div>
+
+      <!-- Filtros de Categoria -->
+      <div class="menu-filters">
+        <button class="filter-btn active" data-category="all">Todos</button>
+        <button class="filter-btn" data-category="entradas">🥗 Entradas</button>
+        <button class="filter-btn" data-category="principais">🍽️ Pratos Principais</button>
+        <button class="filter-btn" data-category="sobremesas">🍰 Sobremesas</button>
+        <button class="filter-btn" data-category="bebidas">🥤 Bebidas</button>
+      </div>
+
+      <div class="menu-grid">
+        <!-- ENTRADAS -->
+        <article class="menu-item" data-category="entradas">
+          <div class="menu-item-image">
+            <img src="img/bruschetta.png" alt="Bruschetta Vegana" />
+            <span class="menu-badge">Novo</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Bruschetta Toscana</h3>
+              <span class="menu-price">R$ 24,90</span>
+            </div>
+            <p class="menu-description">Pão artesanal tostado com tomate fresco, manjericão, alho e azeite extra virgem
+            </p>
+            <div class="menu-tags">
+              <span class="tag">Leve</span>
+              <span class="tag">Sem Glúten*</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="entradas">
+          <div class="menu-item-image">
+            <img src="img/ceviche.png" alt="Ceviche de Cogumelos" />
+            <span class="menu-badge popular">Popular</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Ceviche de Cogumelos</h3>
+              <span class="menu-price">R$ 32,90</span>
+            </div>
+            <p class="menu-description">Cogumelos king marinados no limão, cebola roxa, coentro e pimenta dedo-de-moça
+            </p>
+            <div class="menu-tags">
+              <span class="tag">Picante</span>
+              <span class="tag">Rico em Proteína</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="entradas">
+          <div class="menu-item-image">
+            <img src="img/Salada.png" alt="Salada Mediterrânea" />
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Salada Mediterrânea</h3>
+              <span class="menu-price">R$ 28,90</span>
+            </div>
+            <p class="menu-description">Grão-de-bico, pepino, tomate-cereja, azeitonas, ervas frescas e azeite de oliva
+            </p>
+            <div class="menu-tags">
+              <span class="tag">Fresco</span>
+              <span class="tag">Alto em Fibras</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- PRATOS PRINCIPAIS -->
+        <article class="menu-item" data-category="principais">
+          <div class="menu-item-image">
+            <img src="img/lasanha.png" alt="Lasanha Vegana" />
+            <span class="menu-badge popular">Popular</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Lasanha à Bolonhesa</h3>
+              <span class="menu-price">R$ 45,90</span>
+            </div>
+            <p class="menu-description">Camadas de massa fresca, molho bolonhesa de PTS, creme de castanhas e manjericão
+            </p>
+            <div class="menu-tags">
+              <span class="tag">Confortável</span>
+              <span class="tag">Rico em Proteína</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="principais">
+          <div class="menu-item-image">
+            <img src="img/tofu.png" alt="Bowl Proteico" />
+            <span class="menu-badge">Chef's Choice</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Buddha Bowl Completo</h3>
+              <span class="menu-price">R$ 38,90</span>
+            </div>
+            <p class="menu-description">Tofu crocante, quinoa tricolor, espinafre, abacate, sementes e molho tahine de
+              limão</p>
+            <div class="menu-tags">
+              <span class="tag">Balanceado</span>
+              <span class="tag">Superfoods</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="principais">
+          <div class="menu-item-image">
+            <img src="img/curry.png" alt="Curry Verde" />
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Curry Verde Tailandês</h3>
+              <span class="menu-price">R$ 42,90</span>
+            </div>
+            <p class="menu-description">Brócolis, ervilha-torta, berinjela, leite de coco, pasta de curry verde e arroz
+              jasmine</p>
+            <div class="menu-tags">
+              <span class="tag">Aromático</span>
+              <span class="tag">Levemente Picante</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="principais">
+          <div class="menu-item-image">
+            <img src="img/wrap.png" alt="Wrap Mediterrâneo" />
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Wrap Mediterrâneo</h3>
+              <span class="menu-price">R$ 34,90</span>
+            </div>
+            <p class="menu-description">Tortilha integral, hummus caseiro, legumes grelhados, rúcula e molho de tahine
+            </p>
+            <div class="menu-tags">
+              <span class="tag">Prático</span>
+              <span class="tag">Nutritivo</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- SOBREMESAS -->
+        <article class="menu-item" data-category="sobremesas">
+          <div class="menu-item-image">
+            <img src="img/bowl.png" alt="Cheesecake Vegano" />
+            <span class="menu-badge">Novo</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Cheesecake de Frutas Vermelhas</h3>
+              <span class="menu-price">R$ 26,90</span>
+            </div>
+            <p class="menu-description">Base de castanhas, creme de caju, calda de frutas vermelhas e raspas de limão
+            </p>
+            <div class="menu-tags">
+              <span class="tag">Cremoso</span>
+              <span class="tag">Sem Açúcar Refinado</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="sobremesas">
+          <div class="menu-item-image">
+            <img src="img/curry.png" alt="Brownie Vegano" />
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Brownie de Chocolate 70%</h3>
+              <span class="menu-price">R$ 22,90</span>
+            </div>
+            <p class="menu-description">Chocolate belga 70% cacau, nozes, adoçado com tâmaras e coberto com ganache</p>
+            <div class="menu-tags">
+              <span class="tag">Indulgente</span>
+              <span class="tag">Rico em Antioxidantes</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="sobremesas">
+          <div class="menu-item-image">
+            <img src="img/bowl.png" alt="Mousse de Maracujá" />
+            <span class="menu-badge popular">Popular</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Mousse de Maracujá</h3>
+              <span class="menu-price">R$ 19,90</span>
+            </div>
+            <p class="menu-description">Creme aerado de maracujá com leite de coco, finalizado com sementes crocantes
+            </p>
+            <div class="menu-tags">
+              <span class="tag">Refrescante</span>
+              <span class="tag">Leve</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- BEBIDAS -->
+        <article class="menu-item" data-category="bebidas">
+          <div class="menu-item-image">
+            <img src="img/Salada.png" alt="Suco Verde Detox" />
+            <span class="menu-badge">Detox</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Green Detox</h3>
+              <span class="menu-price">R$ 16,90</span>
+            </div>
+            <p class="menu-description">Couve, espinafre, maçã verde, gengibre, limão e hortelã</p>
+            <div class="menu-tags">
+              <span class="tag">Detox</span>
+              <span class="tag">Energizante</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="bebidas">
+          <div class="menu-item-image">
+            <img src="img/tofu.png" alt="Golden Milk" />
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Golden Milk</h3>
+              <span class="menu-price">R$ 14,90</span>
+            </div>
+            <p class="menu-description">Leite de amêndoas, cúrcuma, gengibre, canela e mel vegano</p>
+            <div class="menu-tags">
+              <span class="tag">Anti-inflamatório</span>
+              <span class="tag">Reconfortante</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="bebidas">
+          <div class="menu-item-image">
+            <img src="img/bowl.png" alt="Smoothie de Açaí" />
+            <span class="menu-badge popular">Popular</span>
+          </div>
+          <div class="menu-item-info">
+            <div class="menu-item-header">
+              <h3>Smoothie Power de Açaí</h3>
+              <span class="menu-price">R$ 18,90</span>
+            </div>
+            <p class="menu-description">Açaí orgânico, banana, morango, leite de coco e granola caseira</p>
+            <div class="menu-tags">
+              <span class="tag">Energético</span>
+              <span class="tag">Antioxidante</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="menu-footer">
+        <p><strong>* Opções sem glúten disponíveis mediante solicitação</strong></p>
+        <p>Todos os pratos podem ser personalizados. Fale com nossa equipe sobre alergias e restrições alimentares.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="porque" class="section">
+    <div class="container">
+      <div class="section-head centered">
+        <h2>Por que escolher a VittaFit?</h2>
+        <p>Mais do que um restaurante, somos um movimento por uma alimentação consciente e saborosa.</p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-image">
+          <img src="img/ingredients.png" alt="Ingredientes frescos e orgânicos" />
+          <span class="img-tag">Imagem gerada por IA</span>
+        </div>
+        <div class="why-features">
+          <div class="feature-card">
+            <div class="feature-icon">🥗</div>
+            <div>
+              <h3>100% Plant-Based</h3>
+              <p>Todos os nossos pratos são feitos exclusivamente com ingredientes de origem vegetal, sem comprometer
+                sabor ou qualidade.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">🌾</div>
+            <div>
+              <h3>Ingredientes Orgânicos</h3>
+              <p>Priorizamos fornecedores locais e produtos orgânicos, garantindo frescor e apoiando a agricultura
+                sustentável.</p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">👨‍🍳</div>
+            <div>
+              <h3>Chef Especializado</h3>
+              <p>Nossa equipe de chefs é especializada em gastronomia vegana, criando pratos inovadores que surpreendem.
+              </p>
+            </div>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📍</div>
+            <div>
+              <h3>Ambiente Acolhedor</h3>
+              <p>Espaço moderno e confortável, perfeito para refeições rápidas ou encontros especiais com amigos e
+                família.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios" class="section section-alt">
+    <div class="container">
+      <div class="section-head centered">
+        <h2>Benefícios da alimentação vegana</h2>
+        <p>Comer vegano pode ser delicioso e trazer vantagens ao bem-estar e ao meio ambiente.</p>
+      </div>
+
+      <div class="benefits">
+        <div class="benefit">
+          <div class="icon">🌱</div>
+          <h3>Sustentabilidade</h3>
+          <p><strong>Impacto:</strong> menor pegada ambiental e melhor uso de recursos naturais.</p>
+        </div>
+        <div class="benefit">
+          <div class="icon">💚</div>
+          <h3>Bem-estar</h3>
+          <p><strong>Foco:</strong> fibras, vitaminas e variedade para energia estável.</p>
+        </div>
+        <div class="benefit">
+          <div class="icon">🍽️</div>
+          <h3>Sabor</h3>
+          <p><strong>Experiência:</strong> técnicas e especiarias para pratos marcantes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="section">
+    <div class="container">
+      <div class="section-head centered">
+        <h2>O que nossos clientes dizem</h2>
+        <p>Experiências reais de pessoas que já conhecem a VittaFit.</p>
+      </div>
+
+      <div class="testimonials">
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Nunca imaginei que comida vegana pudesse ser tão saborosa! O Bowl Proteico é meu
+            favorito. Virou meu lugar preferido para almoço."</p>
+          <div class="testimonial-author">
+            <strong>Marina Silva</strong>
+            <span>Cliente desde 2024</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"A qualidade dos ingredientes é impressionante. Você sente que está comendo algo
+            realmente nutritivo e bem preparado. Super recomendo!"</p>
+          <div class="testimonial-author">
+            <strong>Carlos Eduardo</strong>
+            <span>Cliente desde 2023</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="stars">⭐⭐⭐⭐⭐</div>
+          <p class="testimonial-text">"Ambiente acolhedor, atendimento nota 10 e comida deliciosa. A Salada Mediterrânea
+            é perfeita para quem quer algo leve mas satisfatório."</p>
+          <div class="testimonial-author">
+            <strong>Ana Beatriz</strong>
+            <span>Cliente desde 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section section-alt">
+    <div class="container">
+      <div class="contact">
+        <div>
+          <h2>Fale com a VittaFit</h2>
+          <p>Quer encomendar, sugerir pratos ou fechar parceria? Envie uma mensagem.</p>
+          <form class="contact-form" action="#" method="post">
+            <div class="form-row">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+            </div>
+            <div class="form-row">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="seuemail@exemplo.com" required />
+            </div>
+            <div class="form-row">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte sua ideia"></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+          </form>
+        </div>
+        <aside class="card soft">
+          <h3>Endereço</h3>
+          <p><strong>São Paulo — SP</strong><br />Atendimento de segunda a sábado, 10h às 19h.</p>
+          <h3>Redes</h3>
+          <p><strong>Instagram:</strong> @vittafit<br /><strong>WhatsApp:</strong> (11) 99999-9999</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Pronto para experimentar a VittaFit?</h2>
+        <p>Venha nos visitar e descubra como a comida vegana pode ser deliciosa, nutritiva e sustentável. Nossa equipe
+          está pronta para receber você!</p>
+        <div class="cta-actions">
+          <a href="#contato" class="btn btn-primary btn-large">Faça seu pedido</a>
+          <a href="#cardapio" class="btn btn-outline btn-large">Ver cardápio completo</a>
+        </div>
+        <div class="cta-info">
+          <div class="info-item">
+            <span class="info-icon">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>São Paulo - SP</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">🕒</span>
+            <div>
+              <strong>Horário</strong>
+              <p>Seg-Sáb: 10h às 19h</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <span class="info-icon">📱</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>(11) 99999-9999</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 VittaFit — Nutrição & Sabor. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Script para filtros do cardápio -->
+  <script src="menu.js"></script>
+</body>
+
+</html>
